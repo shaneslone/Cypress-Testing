@@ -93,7 +93,7 @@ function App() {
   <GlobalStyle />
   <StyledOutput><Form values={formValues} change={formChange} submit={formSubmit} disabled={disabled} errors={formErrors}/></StyledOutput>
   <StyledOutput><h1>Post Request Output</h1></StyledOutput>
-  {users.map(user => <StyledOutput>{user}</StyledOutput>)}
+  {users.map(user => <StyledOutput id={user.id}>{user}</StyledOutput>)}
   </>
   )
 }
